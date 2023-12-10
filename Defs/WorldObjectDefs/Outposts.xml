@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <WorldObjectDef ParentName="OutpostBase">
+        <defName>Outpost_Food</defName>
+        <label>Farming Outpost</label>
+        <description>Creates a camp with a focus on cultivating and reaping easily-grown vegetation. This outpost will deliver the reaped vegetation to the primary colony of the empire.</description>
+        <expandingIconTexture>WorldObjects/OutpostFood</expandingIconTexture>
+        <worldObjectClass>ImperialAmbitions.Outposts.OutpostFood</worldObjectClass>
+        <modExtensions>
+            <li Class="ImperialAmbitions.Core.Outposts.OutpostExtension_Choose">
+                <TicksPerProduction>3600000</TicksPerProduction>
+                <RequiresGrowing>true</RequiresGrowing>
+                <RequiredSkills>
+                    <Plants>10</Plants>
+                </RequiredSkills>
+                <ProvidedFood>MealFine_Veg</ProvidedFood>
+                <ResultOptions />
+                <ChooseLabel>Choose plant</ChooseLabel>
+                <ChooseDesc>Choose which plant this outpost should plant</ChooseDesc>
+            </li>
+        </modExtensions>
+    </WorldObjectDef>
+</Defs>
